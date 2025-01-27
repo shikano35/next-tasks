@@ -8,7 +8,7 @@ export interface FormState {
     error: string;
 }
 
-export const creatTask = async (state: FormState, formData: FormData) => {
+export const createTask = async (state: FormState, formData: FormData) => {
     const newTask: Task = {
         title: formData.get("title") as string,
         description: formData.get("description") as string,
