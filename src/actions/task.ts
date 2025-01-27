@@ -13,7 +13,7 @@ export const createTask = async (state: FormState, formData: FormData) => {
         title: formData.get("title") as string,
         description: formData.get("description") as string,
         dueDate: formData.get("dueDate") as string,
-        isComplete: false,
+        isCompleted: false,
     }
 
     try {
