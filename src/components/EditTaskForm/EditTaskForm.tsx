@@ -1,6 +1,11 @@
+import { TaskDocument } from '@/models/task'
 import React from 'react'
 
-const EditTaskForm = () => {
+interface EditTaskFormProps {
+  task: TaskDocument;
+}
+
+const EditTaskForm: React.FC<EditTaskFormProps> = ({ task }) => {
   return (
     <div className='mt-10 mx-auto w-full max-w-sm'>
       <form action="">
